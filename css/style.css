@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+.container{
+    display: grid;
+    gap: 4px;
+}
+header{
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header h1{
+    font-variant: small-caps;
+    text-shadow: 2px 2px black;
+}
+nav{
+    height: 30px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+main{
+    display: flex;
+    gap: 4px;
+}
+.content{
+    background-color: rgb(179, 174, 174);
+    flex: 3;
+    text-align: center;
+}
+.content-title, .content-info-container{
+    margin-top: 16px;
+}
+.content-info-container{
+    display: grid;
+    gap: 12px;
+}
+.content-info{
+    text-align: justify;
+    margin: 0 10px;
+}
+aside{
+    flex: 1;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: repeat(auto, 60px); */
+    grid-auto-rows: 60px;
+    gap: 4px;
+    text-align: center;
+}
+.calendar{
+    background-color: #16FF00;
+    grid-row: span 3;
+}
+.iklan{
+    background-color: purple;
+    grid-row: span 1;
+}
+footer{
+    background-color: chocolate;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
